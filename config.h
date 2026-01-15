@@ -115,28 +115,28 @@ float alphaUnfocus;
 // e-ink white
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#FFFFFF", /* white background */
-    "#000000", /* black */
-    "#5C5C5C", /* dark gray (red) */
-    "#6E6E6E", /* medium gray (green) */
-    "#4A4A4A", /* very dark gray (yellow) */
-    "#616161", /* gray (blue) */
-    "#525252", /* medium dark (magenta) */
-    "#3C3C3C", /* dark (cyan) */
-    "#8B8B8B", /* light gray (bright black) */
-    "#000000", /* black (bright red) */
-    "#5C5C5C", /* dark gray (bright green) */
-    "#6E6E6E", /* medium gray (bright yellow) */
-    "#4A4A4A", /* very dark gray (bright blue) */
-    "#616161", /* gray (bright magenta) */
-    "#525252", /* medium dark (bright cyan) */
-    "#000000", /* black (bright white) */
+    "#FFFFFF", /* background - white like e-ink paper */
+    "#000000", /* black text (normal black) */
+    "#333333", /* dark gray */
+    "#666666", /* medium gray */
+    "#222222", /* very dark gray */
+    "#444444", /* gray */
+    "#555555", /* medium dark gray */
+    "#111111", /* near black */
+    "#888888", /* bright black (light gray) */
+    "#000000", /* bright red (black) */
+    "#333333", /* bright green (dark gray) */
+    "#666666", /* bright yellow (medium gray) */
+    "#222222", /* bright blue (very dark gray) */
+    "#444444", /* bright magenta (gray) */
+    "#555555", /* bright cyan (medium dark gray) */
+    "#000000", /* bright white (black) */
     [255] = 0,
     /* more colors can be added after 255 to use with DefaultXX */
-    "#000000", /* 256 -> cursor */
-    "#FFFFFF", /* 257 -> rev cursor */
-    "#FFFFFF", /* 258 -> bg */
-    "#000000", /* 259 -> fg */
+    "#000000", /* 256 -> cursor (black) */
+    "#FFFFFF", /* 257 -> rev cursor (white) */
+    "#FFFFFF", /* 258 -> bg (white paper) */
+    "#000000", /* 259 -> fg (black ink) */
 };
 
 // e-ink black
