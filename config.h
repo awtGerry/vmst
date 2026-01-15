@@ -112,31 +112,59 @@ float alphaOffset = 0.0;
 float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
+// e-ink white
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-    "#000000", /* black background */
-    "#FFFFFF", /* white text */
-    "#CCCCCC", /* light gray */
-    "#AAAAAA", /* medium light gray */
-    "#DDDDDD", /* very light gray */
-    "#BBBBBB", /* gray */
-    "#C8C8C8", /* medium gray */
-    "#EEEEEE", /* near white */
-    "#666666", /* dark gray (bright black) */
-    "#FFFFFF", /* white (bright red) */
-    "#CCCCCC", /* light gray (bright green) */
-    "#AAAAAA", /* medium light (bright yellow) */
-    "#DDDDDD", /* very light (bright blue) */
-    "#BBBBBB", /* gray (bright magenta) */
-    "#C8C8C8", /* medium gray (bright cyan) */
-    "#FFFFFF", /* white (bright white) */
+    "#FFFFFF", /* white background */
+    "#000000", /* black */
+    "#5C5C5C", /* dark gray (red) */
+    "#6E6E6E", /* medium gray (green) */
+    "#4A4A4A", /* very dark gray (yellow) */
+    "#616161", /* gray (blue) */
+    "#525252", /* medium dark (magenta) */
+    "#3C3C3C", /* dark (cyan) */
+    "#8B8B8B", /* light gray (bright black) */
+    "#000000", /* black (bright red) */
+    "#5C5C5C", /* dark gray (bright green) */
+    "#6E6E6E", /* medium gray (bright yellow) */
+    "#4A4A4A", /* very dark gray (bright blue) */
+    "#616161", /* gray (bright magenta) */
+    "#525252", /* medium dark (bright cyan) */
+    "#000000", /* black (bright white) */
     [255] = 0,
     /* more colors can be added after 255 to use with DefaultXX */
-    "#FFFFFF", /* 256 -> cursor (white) */
-    "#000000", /* 257 -> rev cursor (black) */
-    "#000000", /* 258 -> bg (black) */
-    "#FFFFFF", /* 259 -> fg (white) */
+    "#000000", /* 256 -> cursor */
+    "#FFFFFF", /* 257 -> rev cursor */
+    "#FFFFFF", /* 258 -> bg */
+    "#000000", /* 259 -> fg */
 };
+
+// e-ink black
+// static const char *colorname[] = {
+//     "#000000", /* black background */
+//     "#FFFFFF", /* white text */
+//     "#CCCCCC", /* light gray */
+//     "#AAAAAA", /* medium light gray */
+//     "#DDDDDD", /* very light gray */
+//     "#BBBBBB", /* gray */
+//     "#C8C8C8", /* medium gray */
+//     "#EEEEEE", /* near white */
+//     "#666666", /* dark gray (bright black) */
+//     "#FFFFFF", /* white (bright red) */
+//     "#CCCCCC", /* light gray (bright green) */
+//     "#AAAAAA", /* medium light (bright yellow) */
+//     "#DDDDDD", /* very light (bright blue) */
+//     "#BBBBBB", /* gray (bright magenta) */
+//     "#C8C8C8", /* medium gray (bright cyan) */
+//     "#FFFFFF", /* white (bright white) */
+//     [255] = 0,
+//     /* more colors can be added after 255 to use with DefaultXX */
+//     "#FFFFFF", /* 256 -> cursor (white) */
+//     "#000000", /* 257 -> rev cursor (black) */
+//     "#000000", /* 258 -> bg (black) */
+//     "#FFFFFF", /* 259 -> fg (white) */
+// };
+
 
 /*
  * Default colors (colorname index)
